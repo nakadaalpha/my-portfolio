@@ -1,0 +1,48 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Animasi dari Kanan ke Kiri (Baris Atas) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Animasi dari Kiri ke Kanan (Baris Bawah) */
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  animation: marquee-reverse 60s linear infinite; /* Sedikit lebih cepat agar lebih dinamis */
+}
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE dan Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
