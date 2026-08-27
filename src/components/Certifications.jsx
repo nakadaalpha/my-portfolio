@@ -1,5 +1,6 @@
 // src/components/Certifications.jsx
 import { useState, useEffect } from "react";
+import { certificationsData } from "../data/portfolio";
 
 const Certifications = () => {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -22,46 +23,6 @@ const Certifications = () => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
-
-  const certificationsData = [
-    {
-      id: 1,
-      title: "Learn the Basics of Web Programming",
-      issuer: "Dicoding Academy",
-      date: "March 2026",
-      credentialId: "QLZ992QE7Z5D",
-      image:
-        "/certificates/Sertifikat Kompetensi - Dicoding Indonesia (Belajar Dasar Pemrograman Web).pdf",
-      logo: "/logos/Dicoding.jpeg",
-    },
-    {
-      id: 2,
-      title: "Introduction to Programming Logic (Programming Logic 101)",
-      issuer: "Dicoding Indonesia",
-      date: "February 2026",
-      credentialId: "L4PQ9192OPO1",
-      image: "/certificates/Sertifikat Kompetensi - Dicoding Indonesia - Pengenalan ke Logika Pemrograman (Programming Logic 101).pdf",
-      logo: "/logos/Dicoding.jpeg",
-    },
-    {
-      id: 3,
-      title: "Certified Laravel Developer",
-      issuer: "Laravel",
-      date: "Agustus 2025",
-      credentialId: "LVD-2025-001",
-      image: "/certificates/laravel-dummy.jpg",
-      logo: "/logos/Laravel.svg",
-    },
-    {
-      id: 4,
-      title: "Cybersecurity Fundamentals",
-      issuer: "Cisco Networking Academy",
-      date: "Juli 2025",
-      credentialId: "CS-F-456123",
-      image: "/certificates/cisco-dummy.jpg",
-      logo: "/logos/cisco.svg",
-    },
-  ];
 
   return (
     <section

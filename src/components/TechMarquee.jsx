@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import { technologies, programmingLanguages } from "../data/portfolio";
 
 // Komponen Helper untuk logika Scroll + Marquee
 const ScrollMarquee = ({ items, reverse = false }) => {
@@ -86,38 +87,6 @@ const ScrollMarquee = ({ items, reverse = false }) => {
 };
 
 const TechMarquee = () => {
-  const technologies = [
-    { name: "AWS", logo: "/logos/AWS.svg" },
-    { name: "React.js", logo: "/logos/React.svg" },
-    { name: "Node.js", logo: "/logos/Node.js.svg" },
-    { name: "Vite", logo: "/logos/Vite.js.svg" },
-    { name: "CodeIgniter", logo: "/logos/CodeIgniter.svg" },
-    { name: "Laravel", logo: "/logos/Laravel.svg" },
-    { name: "Express.js", logo: "/logos/Express.svg" },
-    { name: "Tailwind CSS", logo: "/logos/Tailwind CSS.svg" },
-    { name: "Git", logo: "/logos/Git.svg" },
-    { name: "GitHub", logo: "/logos/GitHub.svg" },
-    { name: "MySQL", logo: "/logos/MySQL.svg" },
-    { name: "PostgresSQL", logo: "/logos/PostgresSQL.svg" },
-    { name: "Visual Studio Code", logo: "/logos/Visual Studio Code.svg" },
-    { name: "Postman", logo: "/logos/Postman.svg" },
-    { name: "NPM", logo: "/logos/NPM.svg" },
-    { name: "Nodemon", logo: "/logos/Nodemon.svg" },
-    { name: "ESLint", logo: "/logos/ESLint.svg" },
-    { name: "Oh my zsh", logo: "/logos/Oh my zsh.svg" },
-    { name: "Homebrew", logo: "/logos/Homebrew.svg" },
-  ];
-
-  const programmingLanguages = [
-    { name: "C++", logo: "/logos/C++ (CPlusPlus).svg" },
-    { name: "HTML5", logo: "/logos/HTML5.svg" },
-    { name: "CSS3", logo: "/logos/CSS3.svg" },
-    { name: "PHP", logo: "/logos/PHP.svg" },
-    { name: "JavaScript", logo: "/logos/JavaScript.svg" },
-    { name: "TypeScript", logo: "/logos/TypeScript.svg" },
-    { name: "Python", logo: "/logos/Python.svg" },
-  ];
-
   return (
     <div className="w-full py-16 bg-slate-950 border-y border-white/5 mt-16 overflow-hidden">
       {/* --- SECTION 1: TECH STACK & TOOLS --- */}

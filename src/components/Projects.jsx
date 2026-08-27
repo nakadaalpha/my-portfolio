@@ -1,51 +1,7 @@
 // src/components/Projects.jsx
+import { projectsData } from "../data/portfolio";
 
 const Projects = () => {
-  // Data proyek Anda
-  const projectsData = [
-    {
-      id: 1,
-      title: "Èpicerie Digital Platform",
-      category: "Fullstack Development",
-      description:
-        "Platform digital inovatif untuk transformasi toko tradisional. Dilengkapi dengan sistem autentikasi yang aman dan fitur pencarian dinamis untuk manajemen yang lebih efisien.",
-      techStack: ["Laravel 12", "React", "Tailwind CSS", "MySQL"],
-      linkTo: "#",
-      // Gunakan warna gradien sebagai placeholder sementara
-      bgGradient: "from-slate-800 to-zinc-900",
-    },
-    {
-      id: 2,
-      title: "Luxury Watch Recommender",
-      category: "Data Science & Machine Learning",
-      description:
-        "Mesin rekomendasi cerdas menggunakan metode Content-Based Filtering. Memanfaatkan Sentence-BERT (SBERT) dan Cosine Similarity untuk menganalisis dan merekomendasikan jam tangan mewah secara akurat.",
-      techStack: ["Python", "SBERT", "NLP", "Data Crawling"],
-      linkTo: "#",
-      bgGradient: "from-zinc-900 to-stone-800",
-    },
-    {
-      id: 3,
-      title: "Luminotes",
-      category: "Frontend Development",
-      description:
-        "Aplikasi pencatatan (note-taking) interaktif dengan antarmuka UI/UX modern. Mendukung operasi CRUD penuh yang dikelola secara efisien menggunakan penyimpanan lokal (local storage).",
-      techStack: ["React.js", "Vite", "Tailwind CSS"],
-      linkTo: "#",
-      bgGradient: "from-gray-800 to-slate-900",
-    },
-    {
-      id: 4,
-      title: "Bookshelf RESTful API",
-      category: "Backend Architecture",
-      description:
-        "Layanan backend web service tangguh untuk manajemen rak buku digital. Dibangun dengan routing yang terstruktur dan telah melewati pengujian ketat menggunakan Postman.",
-      techStack: ["Node.js", "Hapi.js", "API Testing"],
-      linkTo: "#",
-      bgGradient: "from-stone-800 to-zinc-900",
-    },
-  ];
-
   return (
     <section
       id="projects"

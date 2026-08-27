@@ -1,22 +1,6 @@
-const Timeline = () => {
-  const timelineData = [
-    {
-      year: "2020 - 2023",
-      description:
-        "Studied at SMA N 1 Karanganom.",
-    },
-    {
-      year: "2023",
-      description:
-        "Dicoding Coding Camp Fullstack Web Developer",
-    },
-    {
-      year: "2023 - Now",
-      description:
-        "Currently pursuing a Bachelor's degree in Information Systems at the Faculty of Computer Science, Amikom University Yogyakarta.",
-    },
-  ];
+import { timelineData } from "../data/portfolio";
 
+const Timeline = () => {
   return (
     <section
       id="experience"

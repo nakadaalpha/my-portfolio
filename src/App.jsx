@@ -16,7 +16,7 @@ function App() {
         <About />
         <Timeline />
         <TechMarquee />
-        <ProductPreview />
+        {/* <ProductPreview /> */}
         <Projects />
         <Certifications />
       </main>

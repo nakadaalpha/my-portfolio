@@ -1,10 +1,11 @@
 import Background from "./Background";
+import { personalInfo } from "../data/portfolio";
 
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden z-10">
       {/* Subtle Background */}
-      <Background />
+      {/* <Background /> */}
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
         {/* Headline */}
@@ -20,9 +21,9 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
           I'm{" "}
           <span className="text-white font-medium drop-shadow-md">
-            Muhammad Abbad Raid Alfath
+            {personalInfo.name}
           </span>
-          , a Full Stack Developer focused on building high-performance web
+          , a {personalInfo.role} focused on building high-performance web
           applications with seamless user experiences.
         </p>
 
