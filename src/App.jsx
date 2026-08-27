@@ -9,7 +9,7 @@ import Certifications from "./components/Certifications";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-zinc-900 font-sans selection:bg-red-100 selection:text-red-700">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-red-500/30 selection:text-red-200">
       <Navbar />
       <main>
         <Hero />

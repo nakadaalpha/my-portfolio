@@ -46,3 +46,22 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+/* 1. Daftarkan nama animasi baru Anda ke dalam tema Tailwind */
+@theme {
+  --animate-slide-up-fade: slideUpFade 1.5s ease-out forwards;
+}
+
+/* 2. Buat pergerakan keyframes-nya menggunakan CSS standar */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* (Kode CSS Anda yang lain jika ada...) */
+s

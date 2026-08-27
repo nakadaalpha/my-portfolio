@@ -66,7 +66,7 @@ const ScrollMarquee = ({ items, reverse = false }) => {
         <div
           key={`${item.name}-${index}`}
           title={item.name}
-          className="flex items-center justify-center w-40 h-40 bg-zinc-50 border border-zinc-100 rounded-2xl shadow-sm hover:border-red-200 hover:shadow-md transition-all duration-300 group flex-shrink-0"
+          className="flex items-center justify-center w-40 h-40 bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-2xl shadow-sm hover:border-red-500/50 hover:shadow-[0_0_20px_rgba(239,68,68,0.2)] transition-all duration-300 group flex-shrink-0"
         >
           {item.logo ? (
             <img
@@ -75,7 +75,7 @@ const ScrollMarquee = ({ items, reverse = false }) => {
               className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300 pointer-events-none select-none"
             />
           ) : (
-            <span className="text-xs font-bold text-zinc-400 uppercase">
+            <span className="text-xs font-bold text-slate-500 uppercase">
               {item.name.substring(0, 3)}
             </span>
           )}
@@ -119,10 +119,10 @@ const TechMarquee = () => {
   ];
 
   return (
-    <div className="w-full py-16 bg-white border-y border-blue-200 mt-16 overflow-hidden">
+    <div className="w-full py-16 bg-slate-950 border-y border-white/5 mt-16 overflow-hidden">
       {/* --- SECTION 1: TECH STACK & TOOLS --- */}
       <div className="max-w-6xl mx-auto px-6 sm:px-10 mb-8">
-        <h3 className="text-sm font-bold text-zinc-400 tracking-wider uppercase flex justify-between items-center">
+        <h3 className="text-sm font-bold text-slate-500 tracking-wider uppercase flex justify-between items-center">
           <span>Tech Stack & Tools</span>
         </h3>
       </div>
@@ -134,7 +134,7 @@ const TechMarquee = () => {
 
       {/* --- SECTION 2: PROGRAMMING LANGUAGES --- */}
       <div className="max-w-6xl mx-auto px-6 sm:px-10 mb-8 mt-16">
-        <h3 className="text-sm font-bold text-zinc-400 tracking-wider uppercase flex justify-between items-center">
+        <h3 className="text-sm font-bold text-slate-500 tracking-wider uppercase flex justify-between items-center">
           <span>Programming Languages</span>
         </h3>
       </div>

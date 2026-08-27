@@ -49,18 +49,18 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 bg-zinc-50 border-y border-zinc-200"
+      className="py-24 bg-slate-950 border-y border-white/5"
     >
       <div className="max-w-6xl mx-auto px-6 sm:px-10">
         {/* Header Section */}
         <div className="mb-16 md:flex md:items-end md:justify-between">
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-900 tracking-tight mb-4">
-              Featured <span className="text-red-600">Projects.</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+              Featured <span className="text-red-500 drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]">Projects.</span>
             </h2>
-            <div className="w-20 h-1.5 bg-yellow-500 rounded-full mb-6 md:mb-0"></div>
+            <div className="w-20 h-1.5 bg-amber-500 rounded-full mb-6 md:mb-0 shadow-[0_0_10px_rgba(245,158,11,0.6)]"></div>
           </div>
-          <p className="text-zinc-500 max-w-md text-lg leading-relaxed">
+          <p className="text-slate-400 max-w-md text-lg leading-relaxed">
             Kumpulan karya dan eksplorasi teknis yang telah saya bangun,
             menggabungkan desain fungsional dengan arsitektur kode yang solid.
           </p>
@@ -71,7 +71,7 @@ const Projects = () => {
           {projectsData.map((project) => (
             <div
               key={project.id}
-              className="group bg-white rounded-3xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-xl hover:border-red-100 transition-all duration-500 flex flex-col"
+              className="group bg-slate-900/40 backdrop-blur-md rounded-3xl border border-white/10 overflow-hidden shadow-sm hover:shadow-[0_0_25px_rgba(239,68,68,0.15)] hover:border-red-500/50 transition-all duration-500 flex flex-col"
             >
               {/* Image/Mockup Area (Atas) */}
               {/* Nantinya bgGradient ini bisa Anda ganti dengan tag <img src="..." /> */}
@@ -97,7 +97,7 @@ const Projects = () => {
                   {/* Tanda Panah yang bergeser saat di-hover */}
                   <a
                     href={project.linkTo}
-                    className="text-zinc-400 group-hover:text-red-600 transition-colors"
+                    className="text-slate-500 group-hover:text-red-400 transition-colors"
                   >
                     <svg
                       className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300"
@@ -115,11 +115,11 @@ const Projects = () => {
                   </a>
                 </div>
 
-                <h3 className="text-2xl font-bold text-zinc-900 mb-4 group-hover:text-red-600 transition-colors">
+                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
                   {project.title}
                 </h3>
 
-                <p className="text-zinc-600 leading-relaxed mb-8 flex-grow">
+                <p className="text-slate-400 leading-relaxed mb-8 flex-grow">
                   {project.description}
                 </p>
 
@@ -128,7 +128,7 @@ const Projects = () => {
                   {project.techStack.map((tech, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-zinc-100 text-zinc-600 text-xs font-semibold rounded-md border border-zinc-200"
+                      className="px-3 py-1 bg-slate-800/80 text-slate-300 text-xs font-semibold rounded-md border border-white/10"
                     >
                       {tech}
                     </span>
