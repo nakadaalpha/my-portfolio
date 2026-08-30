@@ -112,9 +112,9 @@ const Navbar = () => {
             {[
               { name: "Home", href: "#home" },
               { name: "About Me", href: "#about" },
-              { name: "Experience", href: "#experience" },
+              { name: "Edu & Experience", href: "#experience" },
               { name: "Projects", href: "#projects" },
-              { name: "Certifications", href: "#certifications" },
+              // { name: "Certifications", href: "#certifications" },
               { name: "Contact", href: "#contact" }
             ].map((link) => (
                 <li key={link.name}>

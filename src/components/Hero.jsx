@@ -25,7 +25,7 @@ const Hero = () => {
         </p>
 
         {/* CTA */}
-        <div className="flex gap-6 text-base md:text-lg font-medium">
+        <div className="flex flex-wrap items-center justify-center gap-6 text-base md:text-lg font-medium">
           {/* Primary CTA */}
           <a
             href="#contact"
@@ -41,6 +41,7 @@ const Hero = () => {
           >
             View Projects
           </a>
+
         </div>
       </div>
     </section>

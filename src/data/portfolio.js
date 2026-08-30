@@ -28,8 +28,9 @@ export const projectsData = [
     category: "Fullstack Development",
     description:
       "Innovative digital platform for traditional store transformation. Equipped with a secure authentication system and dynamic search features for more efficient management.",
-    techStack: ["Laravel", "React.js", "MySQL"],
+    techStack: ["Laravel 12", "React", "Tailwind CSS", "MySQL"],
     linkTo: "https://epiceriekiosk.vercel.app/",
+    github: "https://github.com/muhammad-abbad/epicerie",
     bgGradient: "from-slate-800 to-zinc-900",
   },
   {
@@ -38,8 +39,9 @@ export const projectsData = [
     category: "Frontend Development",
     description:
       "Interactive digital showroom platform to showcase collections with a modern and responsive interface. Built with a focus on speed and user experience.",
-    techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
+    techStack: ["React.js", "Vite", "Tailwind CSS"],
     linkTo: "https://notnullshowroom.vercel.app/",
+    github: "https://github.com/muhammad-abbad/notnull-showroom",
     bgGradient: "from-zinc-900 to-stone-800",
   },
   {
@@ -48,8 +50,9 @@ export const projectsData = [
     category: "Web Application",
     description:
       "An innovative PWA that helps users identify types of waste and provides sorting guidelines. Features gamification such as EcoPoints and virtual pets to build green habits.",
-    techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
+    techStack: ["React.js", "Vite", "PWA", "Tailwind CSS"],
     linkTo: "https://nodewaste.vercel.app/",
+    github: "https://github.com/muhammad-abbad/nodewaste",
     bgGradient: "from-emerald-900 to-teal-900",
   },
   {
@@ -58,8 +61,9 @@ export const projectsData = [
     category: "Research Publication (JAIC)",
     description:
       "An accredited research journal publication regarding the use of Sentence-BERT (SBERT) and Cosine Similarity for highly accurate, semantics-based smart e-commerce product recommendation systems.",
-    techStack: ["Python", "Laravel", "SBERT(All-MiniLM-L6v2)", "Natural Language Processing"],
+    techStack: ["Python", "SBERT", "NLP", "Machine Learning"],
     linkTo: "https://jurnal.polibatam.ac.id/index.php/JAIC/article/view/12920",
+    github: "#",
     bgGradient: "from-slate-800 to-blue-950",
   },
 ];

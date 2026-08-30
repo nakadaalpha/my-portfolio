@@ -17,7 +17,7 @@ function App() {
         <Timeline />
         <TechMarquee />
         <Projects />
-        <Certifications />
+        {/* <Certifications /> */}
         <Contact />
       </main>
     </div>
