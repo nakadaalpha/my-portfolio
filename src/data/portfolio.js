@@ -132,7 +132,7 @@ export const technologies = [
 ];
 
 export const programmingLanguages = [
-  { name: "C++", logo: "/logos/C++ (CPlusPlus).svg" },
+  { name: "C++", logo: "/logos/cplusplus.svg" },
   { name: "HTML5", logo: "/logos/HTML5.svg" },
   { name: "CSS3", logo: "/logos/CSS3.svg" },
   { name: "PHP", logo: "/logos/PHP.svg" },
