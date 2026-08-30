@@ -39,9 +39,8 @@ const Certifications = () => {
             <div className="w-20 h-1.5 bg-amber-500 rounded-full mb-6 md:mb-0 shadow-[0_0_10px_rgba(245,158,11,0.6)]"></div>
           </div>
           <p className="text-slate-400 max-w-md text-sm md:text-base leading-relaxed">
-            Sertifikasi profesional dan pencapaian akademis yang memvalidasi
-            keahlian teknis serta komitmen saya terhadap pembelajaran
-            berkelanjutan.
+            Professional certifications and academic achievements that validate
+            my technical expertise and commitment to continuous learning.
           </p>
         </div>
 

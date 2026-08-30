@@ -1,4 +1,4 @@
-import { personalInfo, aboutData } from "../data/portfolio";
+import { personalInfo } from "../data/portfolio";
 
 const About = () => {
   return (
@@ -16,15 +16,38 @@ const About = () => {
         <div className="flex flex-col gap-12 items-start">
           {/* Biography Text Column (Now Full Width) */}
           <div className="space-y-6 text-lg text-slate-400 leading-relaxed max-w-4xl">
-            {aboutData.map((paragraph, index) => (
-              <p key={index}>
-                {/* Minor hack: we can just output the paragraph, but since the original had some bolding for name/school/role, 
-                    we can either render it raw or keep the original rich text for just this part. 
-                    Since we moved it to a string array, it loses the specific span stylings. 
-                    Let's render it normally for now. */}
-                {paragraph}
-              </p>
-            ))}
+            <p>
+              Hello! I'm{" "}
+              <span className="font-bold text-white drop-shadow-sm">
+                {personalInfo.name}
+              </span>
+              . Currently, I am a student studying Information Systems at{" "}
+              <span className="font-semibold text-white drop-shadow-sm">
+                Universitas Amikom Yogyakarta
+              </span>
+              .
+            </p>
+            <p>
+              My primary career focus is as a{" "}
+              <span className="font-semibold text-red-400">
+                {personalInfo.role}
+              </span>
+              . I am highly enthusiastic about building web applications that
+              are not only functional with robust backend architectures, but
+              also deliver an intuitive user interface experience.
+            </p>
+            <p>
+              Beyond web development, I also have a strong interest in data
+              processing. I have built several projects involving{" "}
+              <span className="font-semibold text-amber-400">
+                Data Science and Machine Learning
+              </span>{" "}
+              (specifically Natural Language Processing/NLP and recommendation
+              systems). I am also actively studying the fundamentals of{" "}
+              <span className="font-semibold text-blue-400">Cybersecurity</span>{" "}
+              to ensure the applications I build are secure from common
+              vulnerabilities.
+            </p>
           </div>
 
           {/* --- OLD STATIC SKILL CARDS REMOVED HERE --- */}

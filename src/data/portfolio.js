@@ -5,12 +5,6 @@ export const personalInfo = {
   linkedIn: "@muhammad-abbad"
 };
 
-export const aboutData = [
-  "Hello! I'm Muhammad Abbad Raid Alfath. Currently, I am a student studying Information Systems at Universitas Amikom Yogyakarta.",
-  "My primary career focus is as a Fullstack Web Developer. I am highly enthusiastic about building web applications that are not only functional with robust backend architectures, but also deliver an intuitive user interface experience.",
-  "Beyond web development, I also have a strong interest in data processing. I have built several projects involving Data Science and Machine Learning (specifically Natural Language Processing/NLP and recommendation systems). I am also actively studying the fundamentals of Cybersecurity to ensure the applications I build are secure from common vulnerabilities."
-];
-
 export const timelineData = [
   {
     year: "2020 - 2023",
@@ -29,43 +23,43 @@ export const timelineData = [
 export const projectsData = [
   {
     id: 1,
-    title: "Èpicerie Digital Platform",
+    title: "Èpicerie POS Digital System",
     category: "Fullstack Development",
     description:
-      "Platform digital inovatif untuk transformasi toko tradisional. Dilengkapi dengan sistem autentikasi yang aman dan fitur pencarian dinamis untuk manajemen yang lebih efisien.",
+      "Innovative digital platform for traditional store transformation. Equipped with a secure authentication system and dynamic search features for more efficient management.",
     techStack: ["Laravel 12", "React", "Tailwind CSS", "MySQL"],
-    linkTo: "#",
+    linkTo: "https://epiceriekiosk.vercel.app/",
     bgGradient: "from-slate-800 to-zinc-900",
   },
   {
     id: 2,
-    title: "Luxury Watch Recommender",
-    category: "Data Science & Machine Learning",
+    title: "NotNull Showroom",
+    category: "Frontend Development",
     description:
-      "Mesin rekomendasi cerdas menggunakan metode Content-Based Filtering. Memanfaatkan Sentence-BERT (SBERT) dan Cosine Similarity untuk menganalisis dan merekomendasikan jam tangan mewah secara akurat.",
-    techStack: ["Python", "SBERT", "NLP", "Data Crawling"],
-    linkTo: "#",
+      "Interactive digital showroom platform to showcase collections with a modern and responsive interface. Built with a focus on speed and user experience.",
+    techStack: ["React.js", "Vite", "Tailwind CSS"],
+    linkTo: "https://notnullshowroom.vercel.app/",
     bgGradient: "from-zinc-900 to-stone-800",
   },
   {
     id: 3,
-    title: "Luminotes",
-    category: "Frontend Development",
+    title: "NodeWaste",
+    category: "Web Application",
     description:
-      "Aplikasi pencatatan (note-taking) interaktif dengan antarmuka UI/UX modern. Mendukung operasi CRUD penuh yang dikelola secara efisien menggunakan penyimpanan lokal (local storage).",
-    techStack: ["React.js", "Vite", "Tailwind CSS"],
-    linkTo: "#",
-    bgGradient: "from-gray-800 to-slate-900",
+      "An innovative PWA that helps users identify types of waste and provides sorting guidelines. Features gamification such as EcoPoints and virtual pets to build green habits.",
+    techStack: ["React.js", "Vite", "PWA", "Tailwind CSS"],
+    linkTo: "https://nodewaste.vercel.app/",
+    bgGradient: "from-emerald-900 to-teal-900",
   },
   {
     id: 4,
-    title: "Bookshelf RESTful API",
-    category: "Backend Architecture",
+    title: "SBERT Recommendation System",
+    category: "Research Publication (JAIC)",
     description:
-      "Layanan backend web service tangguh untuk manajemen rak buku digital. Dibangun dengan routing yang terstruktur dan telah melewati pengujian ketat menggunakan Postman.",
-    techStack: ["Node.js", "Hapi.js", "API Testing"],
-    linkTo: "#",
-    bgGradient: "from-stone-800 to-zinc-900",
+      "An accredited research journal publication regarding the use of Sentence-BERT (SBERT) and Cosine Similarity for highly accurate, semantics-based smart e-commerce product recommendation systems.",
+    techStack: ["Python", "SBERT", "NLP", "Machine Learning"],
+    linkTo: "https://jurnal.polibatam.ac.id/index.php/JAIC/article/view/12920",
+    bgGradient: "from-slate-800 to-blue-950",
   },
 ];
 
@@ -94,7 +88,7 @@ export const certificationsData = [
     id: 3,
     title: "Certified Laravel Developer",
     issuer: "Laravel",
-    date: "Agustus 2025",
+    date: "August 2025",
     credentialId: "LVD-2025-001",
     image: "/certificates/laravel-dummy.jpg",
     logo: "/logos/Laravel.svg",
@@ -103,7 +97,7 @@ export const certificationsData = [
     id: 4,
     title: "Cybersecurity Fundamentals",
     issuer: "Cisco Networking Academy",
-    date: "Juli 2025",
+    date: "July 2025",
     credentialId: "CS-F-456123",
     image: "/certificates/cisco-dummy.jpg",
     logo: "/logos/cisco.svg",

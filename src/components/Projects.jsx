@@ -17,8 +17,8 @@ const Projects = () => {
             <div className="w-20 h-1.5 bg-amber-500 rounded-full mb-6 md:mb-0 shadow-[0_0_10px_rgba(245,158,11,0.6)]"></div>
           </div>
           <p className="text-slate-400 max-w-md text-lg leading-relaxed">
-            Kumpulan karya dan eksplorasi teknis yang telah saya bangun,
-            menggabungkan desain fungsional dengan arsitektur kode yang solid.
+            A collection of works and technical explorations I have built,
+            combining functional design with solid code architecture.
           </p>
         </div>
 
@@ -32,15 +32,28 @@ const Projects = () => {
               {/* Image/Mockup Area (Atas) */}
               {/* Nantinya bgGradient ini bisa Anda ganti dengan tag <img src="..." /> */}
               <div
-                className={`w-full h-64 sm:h-80 bg-gradient-to-br ${project.bgGradient} relative overflow-hidden flex items-center justify-center p-8`}
+                className={`w-full h-64 sm:h-80 bg-gradient-to-br ${project.bgGradient} relative overflow-hidden flex items-center justify-center`}
               >
-                {/* Efek hover zoom halus pada "gambar" */}
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                {/* Efek hover overlay */}
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-20 pointer-events-none"></div>
 
-                {/* Placeholder visual jika belum ada gambar mockup */}
-                <div className="text-white/20 font-bold text-6xl tracking-tighter uppercase transform group-hover:scale-105 transition-transform duration-700 select-none">
-                  {project.title.substring(0, 3)}
-                </div>
+                {project.linkTo !== "#" ? (
+                  /* Iframe Preview - Skala 25% dari ukuran 4x lipat untuk mendapatkan versi 'mini' website */
+                  <div className="absolute inset-0 w-full h-full transform group-hover:scale-105 transition-transform duration-700 z-10 pointer-events-none">
+                    <iframe
+                      src={project.linkTo}
+                      title={`Preview of ${project.title}`}
+                      className="absolute top-0 left-0 w-[400%] h-[400%] border-none origin-top-left scale-[0.25]"
+                      scrolling="no"
+                      tabIndex={-1}
+                    />
+                  </div>
+                ) : (
+                  /* Placeholder Text Gradient (Jika link masih "#") */
+                  <div className="text-white/20 font-bold text-6xl tracking-tighter uppercase transform group-hover:scale-105 transition-transform duration-700 select-none z-10">
+                    {project.title.substring(0, 3)}
+                  </div>
+                )}
               </div>
 
               {/* Content Area (Bawah) */}
