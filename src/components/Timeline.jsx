@@ -4,21 +4,24 @@ const Timeline = () => {
   return (
     <section
       id="experience"
-      className="py-10"
+      className="py-24 bg-slate-950"
     >
-      <div className="max-w-4xl mx-auto px-6 sm:px-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-10">
         {/* Header Section */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-extrabold text-white tracking-tight mb-2">
-            Education & Experience
-          </h2>
-          <p className="text-slate-400">
+        <div className="mb-16 md:flex md:items-end md:justify-between">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+              Education & <span className="text-red-500 drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]">Experience.</span>
+            </h2>
+            <div className="w-20 h-1.5 bg-amber-500 rounded-full mb-6 md:mb-0 shadow-[0_0_10px_rgba(245,158,11,0.6)]"></div>
+          </div>
+          <p className="text-slate-400 max-w-md text-lg leading-relaxed">
             Academic background and experience key milestones in my journey as a Fullstack Web Developer.
           </p>
         </div>
 
         {/* Timeline Container */}
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-12 max-w-4xl">
           {timelineData.map((item, index) => (
             <div
               key={index}

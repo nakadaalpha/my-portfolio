@@ -2,7 +2,7 @@ import { personalInfo } from "../data/portfolio";
 
 const About = () => {
   return (
-    <section id="about" className="pb-24 bg-slate-950">
+    <section id="about" className="py-24 bg-slate-950">
       <div className="max-w-6xl mx-auto px-6 sm:px-10">
         {/* Header Section */}
         <div className="mb-16">
@@ -17,33 +17,13 @@ const About = () => {
           {/* Biography Text Column (Now Full Width) */}
           <div className="space-y-6 text-lg text-slate-400 leading-relaxed max-w-4xl">
             <p>
-              Hello! I'm{" "}
-              <span className="font-bold text-white drop-shadow-sm">
-                {personalInfo.name}
-              </span>
-              . Currently, I am a student studying Information Systems at{" "}
-              <span className="font-semibold text-red-400">
-                Universitas Amikom Yogyakarta
-              </span>
-              .
+              I am <span className="font-bold text-white drop-shadow-sm">{personalInfo.name}</span>, an Information Systems undergraduate at <span className="font-semibold text-red-400">Amikom University Yogyakarta</span>, and an aspiring <span className="font-semibold text-amber-400">Full Stack Software Engineer</span>. My core focus is on building modern web applications that are fast, scalable, and elegant. Currently, I am actively seeking real-world opportunities to grow, learn, and contribute within a driven engineering team.
             </p>
             <p>
-              My primary career focus is as a{" "}
-              <span className="font-semibold text-amber-400">
-                {personalInfo.role}
-              </span>
-              . I am highly enthusiastic about building web applications that
-              are not only functional with robust backend architectures, but
-              also deliver an intuitive user interface experience.
+              My development journey has been defined by hands-on experience in architecting and deploying end-to-end solutions. I have built comprehensive systems ranging from the <span className="font-semibold text-blue-400">"Épicerie POS Digital System"</span> (using Laravel and React.js) to the <span className="font-semibold text-blue-400">"NOTNULL Showroom E-commerce"</span> platform (leveraging PostgreSQL, Express, React, and Node.js). Beyond traditional web development, I have led the creation of <span className="font-semibold text-blue-400">"NodeWaste,"</span> an innovative PWA for smart waste classification, and conducted academic research on semantics-based e-commerce recommendations utilizing <span className="font-semibold text-amber-400">Sentence-BERT</span> and <span className="font-semibold text-amber-400">Python</span>.
             </p>
             <p>
-              Beyond web development, I also have a strong interest in data
-              processing. I have built several projects involving{" "}
-              <span className="font-semibold text-blue-400">
-                Data Science and Machine Learning
-              </span>{" "}
-              (specifically Natural Language Processing/NLP and recommendation
-              systems).
+              My academic foundation in Information Systems is further strengthened by intensive practical training, such as completing the <span className="font-semibold text-red-400">Dicoding Coding Camp for Fullstack Web Development</span> in 2026. Beyond the code editor, I channel my energy into physical training like marathon prep and road cycling. I believe the discipline, focus, and endurance required in physical sports perfectly translate into how I tackle complex engineering challenges and deliver seamless user experiences.
             </p>
           </div>
 

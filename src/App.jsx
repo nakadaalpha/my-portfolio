@@ -14,8 +14,8 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Timeline />
         <TechMarquee />
+        <Timeline />
         <Projects />
         {/* <Certifications /> */}
         <Contact />

@@ -88,7 +88,7 @@ const ScrollMarquee = ({ items, reverse = false }) => {
 
 const TechMarquee = () => {
   return (
-    <div className="w-full py-16 bg-slate-950 border-y border-white/5 mt-16 overflow-hidden">
+    <div className="w-full py-24 bg-slate-950 border-y border-white/5 overflow-hidden">
       {/* --- SECTION 1: TECH STACK & TOOLS --- */}
       <div className="max-w-6xl mx-auto px-6 sm:px-10 mb-8">
         <h3 className="text-sm font-bold text-slate-500 tracking-wider uppercase flex justify-between items-center">

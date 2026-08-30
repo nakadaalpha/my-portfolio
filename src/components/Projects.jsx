@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="mb-16 md:flex md:items-end md:justify-between">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
-              Featured <span className="text-red-500 drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]">Projects.</span>
+              Featured <span className="text-red-500 drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]">Projects</span>
             </h2>
             <div className="w-20 h-1.5 bg-amber-500 rounded-full mb-6 md:mb-0 shadow-[0_0_10px_rgba(245,158,11,0.6)]"></div>
           </div>
