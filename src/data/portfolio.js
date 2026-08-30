@@ -35,8 +35,8 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "NotNull Showroom",
-    category: "Frontend Development",
+    title: "NOTNULL Showroom E-commerce",
+    category: "Fullstack Development",
     description:
       "Interactive digital showroom platform to showcase collections with a modern and responsive interface. Built with a focus on speed and user experience.",
     techStack: ["React.js", "Vite", "Tailwind CSS"],
