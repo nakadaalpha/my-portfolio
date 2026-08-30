@@ -1,11 +1,8 @@
-import Background from "./Background";
 import { personalInfo } from "../data/portfolio";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden z-10">
-      {/* Subtle Background */}
-      {/* <Background /> */}
+    <section id="home" className="relative w-full min-h-screen flex items-center justify-center overflow-hidden z-10">
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
         {/* Headline */}

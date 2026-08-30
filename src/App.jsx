@@ -2,10 +2,10 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Timeline from "./components/Timeline";
-import ProductPreview from "./components/ProductPreview";
 import Projects from "./components/Projects";
 import TechMarquee from "./components/TechMarquee";
 import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,9 +16,9 @@ function App() {
         <About />
         <Timeline />
         <TechMarquee />
-        {/* <ProductPreview /> */}
         <Projects />
         <Certifications />
+        <Contact />
       </main>
     </div>
   );

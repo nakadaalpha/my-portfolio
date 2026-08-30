@@ -63,8 +63,8 @@ const Navbar = () => {
           className={`hidden sm:block absolute top-6 p-2 text-white hover:text-red-500 transition-all duration-500 ease-in-out
             ${
               isOpen
-                ? "opacity-100 translate-x-0 sm:left-[524px] md:left-[724px]"
-                : "opacity-0 -translate-x-10 sm:left-[480px] md:left-[680px]"
+                ? "opacity-100 translate-x-0 sm:left-[374px] md:left-[424px]"
+                : "opacity-0 -translate-x-10 sm:left-[330px] md:left-[380px]"
             }`}
         >
           <svg
@@ -85,7 +85,7 @@ const Navbar = () => {
 
       {/* 3. PANEL MENU PUTIH -> SEKARANG PANEL GELAP */}
       <div
-        className={`fixed top-0 left-0 h-full w-full sm:w-[500px] md:w-[700px] bg-slate-950/80 backdrop-blur-2xl z-50 transform transition-transform duration-500 ease-in-out flex flex-col sm:flex-row border-r border-white/10 shadow-2xl ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`fixed top-0 left-0 h-full w-full sm:w-[350px] md:w-[400px] bg-slate-950/80 backdrop-blur-2xl z-50 transform transition-transform duration-500 ease-in-out flex flex-col border-r border-white/10 shadow-2xl ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         {/* Tombol X untuk Mobile */}
         <button
@@ -107,18 +107,24 @@ const Navbar = () => {
           </svg>
         </button>
 
-        <div className="w-full sm:w-1/2 h-full pt-24 px-6 sm:px-10 border-r border-white/5 overflow-y-auto">
+        <div className="w-full h-full pt-24 px-6 sm:px-10 overflow-y-auto">
           <ul className="flex flex-col space-y-2">
-            {["Home", "Projects", "About Me", "Experience", "Contact"].map(
-              (name) => (
-                <li key={name}>
+            {[
+              { name: "Home", href: "#home" },
+              { name: "About Me", href: "#about" },
+              { name: "Experience", href: "#experience" },
+              { name: "Projects", href: "#projects" },
+              { name: "Certifications", href: "#certifications" },
+              { name: "Contact", href: "#contact" }
+            ].map((link) => (
+                <li key={link.name}>
                   <a
-                    href={`#${name.toLowerCase().replace(" ", "")}`}
+                    href={link.href}
                     onClick={() => setIsOpen(false)}
                     className="flex items-center justify-between p-4 text-slate-200 font-medium hover:bg-white/10 rounded-md transition-colors group"
                   >
                     <span className="text-lg group-hover:text-red-400 transition-colors">
-                      {name}
+                      {link.name}
                     </span>
                     <svg
                       className="w-5 h-5 text-slate-500 group-hover:text-red-400 transition-colors"
@@ -140,26 +146,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden sm:block w-1/2 h-full pt-24 px-10 bg-slate-900/30">
-          <h3 className="text-sm font-bold text-slate-500 tracking-wider uppercase mb-6">
-            Quick Connect
-          </h3>
-          <div className="space-y-6">
-            <div className="p-5 bg-slate-800/40 backdrop-blur-md border border-white/10 rounded-lg shadow-sm hover:border-red-500/50 transition-colors">
-              <h4 className="font-bold text-slate-200 mb-1">Email</h4>
-              <p className="text-slate-400 text-sm">hello@portfolio.com</p>
-            </div>
-            <div className="p-5 bg-slate-800/40 backdrop-blur-md border border-white/10 rounded-lg shadow-sm hover:border-red-500/50 transition-colors">
-              <h4 className="font-bold text-slate-200 mb-1">LinkedIn</h4>
-              <p className="text-slate-400 text-sm">@muhammad-abbad</p>
-            </div>
-            <div className="mt-12 h-32 w-full rounded-lg bg-gradient-to-br from-red-600/90 to-yellow-600/90 shadow-lg flex items-center justify-center backdrop-blur-sm">
-              <span className="text-white font-bold tracking-widest text-xl opacity-80">
-                PORTFOLIO
-              </span>
-            </div>
-          </div>
-        </div>
+
       </div>
     </>
   );

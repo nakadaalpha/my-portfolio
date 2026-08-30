@@ -67,13 +67,13 @@ const ScrollMarquee = ({ items, reverse = false }) => {
         <div
           key={`${item.name}-${index}`}
           title={item.name}
-          className="flex items-center justify-center w-40 h-40 bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-2xl shadow-sm hover:border-red-500/50 hover:shadow-[0_0_20px_rgba(239,68,68,0.2)] transition-all duration-300 group flex-shrink-0"
+          className="flex items-center justify-center w-40 h-40 bg-slate-800/60 backdrop-blur-md border border-slate-700 rounded-2xl shadow-sm hover:bg-slate-700/60 hover:border-red-500/50 hover:shadow-[0_0_20px_rgba(239,68,68,0.2)] transition-all duration-300 group flex-shrink-0"
         >
           {item.logo ? (
             <img
               src={item.logo}
               alt={`${item.name} logo`}
-              className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300 pointer-events-none select-none"
+              className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300 pointer-events-none select-none drop-shadow-[0_0_8px_rgba(255,255,255,0.15)]"
             />
           ) : (
             <span className="text-xs font-bold text-slate-500 uppercase">

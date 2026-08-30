@@ -1,8 +1,9 @@
 export const personalInfo = {
   name: "Muhammad Abbad Raid Alfath",
   role: "Full Stack Developer",
-  email: "hello@portfolio.com",
-  linkedIn: "@muhammad-abbad"
+  email: "nakadaalpha@gmail.com",
+  linkedIn: "muhammad-abbad-raid-alfath",
+  whatsapp: "+6285158941664"
 };
 
 export const timelineData = [
@@ -11,7 +12,7 @@ export const timelineData = [
     description: "Studied at SMA N 1 Karanganom.",
   },
   {
-    year: "2023",
+    year: "2026",
     description: "Dicoding Coding Camp Fullstack Web Developer",
   },
   {
@@ -27,7 +28,7 @@ export const projectsData = [
     category: "Fullstack Development",
     description:
       "Innovative digital platform for traditional store transformation. Equipped with a secure authentication system and dynamic search features for more efficient management.",
-    techStack: ["Laravel 12", "React", "Tailwind CSS", "MySQL"],
+    techStack: ["Laravel", "React.js", "MySQL"],
     linkTo: "https://epiceriekiosk.vercel.app/",
     bgGradient: "from-slate-800 to-zinc-900",
   },
@@ -37,7 +38,7 @@ export const projectsData = [
     category: "Frontend Development",
     description:
       "Interactive digital showroom platform to showcase collections with a modern and responsive interface. Built with a focus on speed and user experience.",
-    techStack: ["React.js", "Vite", "Tailwind CSS"],
+    techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
     linkTo: "https://notnullshowroom.vercel.app/",
     bgGradient: "from-zinc-900 to-stone-800",
   },
@@ -47,7 +48,7 @@ export const projectsData = [
     category: "Web Application",
     description:
       "An innovative PWA that helps users identify types of waste and provides sorting guidelines. Features gamification such as EcoPoints and virtual pets to build green habits.",
-    techStack: ["React.js", "Vite", "PWA", "Tailwind CSS"],
+    techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
     linkTo: "https://nodewaste.vercel.app/",
     bgGradient: "from-emerald-900 to-teal-900",
   },
@@ -57,7 +58,7 @@ export const projectsData = [
     category: "Research Publication (JAIC)",
     description:
       "An accredited research journal publication regarding the use of Sentence-BERT (SBERT) and Cosine Similarity for highly accurate, semantics-based smart e-commerce product recommendation systems.",
-    techStack: ["Python", "SBERT", "NLP", "Machine Learning"],
+    techStack: ["Python", "Laravel", "SBERT(All-MiniLM-L6v2)", "Natural Language Processing"],
     linkTo: "https://jurnal.polibatam.ac.id/index.php/JAIC/article/view/12920",
     bgGradient: "from-slate-800 to-blue-950",
   },
