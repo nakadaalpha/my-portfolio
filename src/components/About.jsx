@@ -14,62 +14,17 @@ const About = () => {
 
         {/* --- Layout Change: From Grid to Vertical Stack --- */}
         <div className="flex flex-col gap-12 items-start">
-          {/* Biography Text Column (Now Full Width) */}
-          <div className="space-y-6 text-lg text-slate-600 leading-relaxed max-w-4xl">
+          {/* Biography Text Column (Clean, Crisp Typography) */}
+          <div className="space-y-5 text-base md:text-lg text-slate-700 leading-relaxed max-w-4xl">
             <p>
-              I am <span className="font-bold text-slate-900">{personalInfo.name}</span>, an Information Systems undergraduate at <span className="font-semibold text-red-600">Amikom University Yogyakarta</span>, and an aspiring <span className="font-semibold text-amber-600">Full Stack Software Engineer</span>. My core focus is on building modern web applications that are fast, scalable, and elegant. Currently, I am actively seeking real-world opportunities to grow, learn, and contribute within a driven engineering team.
+              I am <strong className="font-semibold text-slate-900">{personalInfo.name}</strong>, an Information Systems undergraduate at Amikom University Yogyakarta and an aspiring Full Stack Software Engineer. My primary focus is on architecting modern, high-performance web applications with robust backend foundations and seamless user interfaces.
             </p>
             <p>
-              My development journey has been defined by hands-on experience in architecting and deploying end-to-end solutions. I have built comprehensive systems ranging from the <span className="font-semibold text-blue-600">"Épicerie POS Digital System"</span> (using Laravel and React.js) to the <span className="font-semibold text-blue-600">"NOTNULL Showroom E-commerce"</span> platform (leveraging PostgreSQL, Express, React, and Node.js). Beyond traditional web development, I have led the creation of <span className="font-semibold text-blue-600">"NodeWaste,"</span> an innovative PWA for smart waste classification, and conducted academic research on semantics-based e-commerce recommendations utilizing <span className="font-semibold text-amber-600">Sentence-BERT</span> and <span className="font-semibold text-amber-600">Python</span>.
+              My hands-on experience includes developing full-stack production systems such as retail POS platforms, e-commerce solutions, PWAs, and academic research on semantics-based recommendation engines leveraging Sentence-BERT and Python.
             </p>
             <p>
-              My academic foundation in Information Systems is further strengthened by intensive practical training, such as completing the <span className="font-semibold text-red-600">Dicoding Coding Camp for Fullstack Web Development</span> in 2026. Beyond the code editor, I channel my energy into physical training like marathon prep and road cycling. I believe the discipline, focus, and endurance required in physical sports perfectly translate into how I tackle complex engineering challenges and deliver seamless user experiences.
+              Certified in Fullstack Web Development through Dicoding Coding Camp (2026). Outside of engineering, I channel focus and persistence into marathon prep and road cycling—bringing the same discipline and endurance to solving complex software challenges.
             </p>
-          </div>
-
-          <div className="w-full mt-8">
-            <h3 className="text-xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">Core Competencies</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Frontend */}
-              <div className="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-red-500/40 transition-all duration-300">
-                <h4 className="text-red-600 font-bold mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                  Frontend
-                </h4>
-                <ul className="text-slate-600 space-y-2 text-sm">
-                  <li>React.js & Vite</li>
-                  <li>Tailwind CSS</li>
-                  <li>HTML5 & CSS3</li>
-                  <li>JavaScript & TypeScript</li>
-                </ul>
-              </div>
-              
-              {/* Backend */}
-              <div className="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-amber-500/40 transition-all duration-300">
-                <h4 className="text-amber-600 font-bold mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
-                  Backend & Database
-                </h4>
-                <ul className="text-slate-600 space-y-2 text-sm">
-                  <li>Laravel & PHP</li>
-                  <li>Express.js & Node.js</li>
-                  <li>MySQL & PostgreSQL</li>
-                </ul>
-              </div>
-
-              {/* Tools & Others */}
-              <div className="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-blue-500/40 transition-all duration-300">
-                <h4 className="text-blue-600 font-bold mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                  Tools & Concepts
-                </h4>
-                <ul className="text-slate-600 space-y-2 text-sm">
-                  <li>Git & GitHub</li>
-                  <li>AWS & Vercel</li>
-                  <li>RESTful APIs</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>

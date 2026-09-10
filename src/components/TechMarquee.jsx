@@ -1,118 +1,113 @@
-import { useRef, useEffect, useState } from "react";
-import { technologies, programmingLanguages } from "../data/portfolio";
+import { programmingLanguages } from "../data/portfolio";
 
-// Komponen Helper untuk logika Scroll + Marquee
-const ScrollMarquee = ({ items, reverse = false }) => {
-  const scrollRef = useRef(null);
-  const [isInteracting, setIsInteracting] = useState(false);
+const frameworks = [
+  { name: "React.js", logo: "/logos/React.svg" },
+  { name: "Laravel", logo: "/logos/Laravel.svg" },
+  { name: "Node.js", logo: "/logos/Node.js.svg" },
+  { name: "Express.js", logo: "/logos/Express.svg" },
+  { name: "Tailwind CSS", logo: "/logos/Tailwind CSS.svg" },
+  { name: "CodeIgniter", logo: "/logos/CodeIgniter.svg" },
+  { name: "Vite", logo: "/logos/Vite.js.svg" },
+];
 
-  // Duplikasi item 3x agar scroll loop sangat mulus tanpa terlihat patah
-  const duplicatedItems = [...items, ...items, ...items];
+const databases = [
+  { name: "PostgresSQL", logo: "/logos/PostgresSQL.svg" },
+  { name: "MySQL", logo: "/logos/MySQL.svg" },
+  { name: "Supabase", logo: "/logos/supabase.svg" },
+  { name: "Prisma", logo: "/logos/prisma.svg" },
+  { name: "AWS", logo: "/logos/AWS.svg" },
+];
 
-  useEffect(() => {
-    let animationFrameId;
-    const container = scrollRef.current;
+const tools = [
+  { name: "Git", logo: "/logos/Git.svg" },
+  { name: "GitHub", logo: "/logos/GitHub.svg" },
+  { name: "Visual Studio Code", logo: "/logos/Visual Studio Code.svg" },
+  { name: "Postman", logo: "/logos/Postman.svg" },
+  { name: "NPM", logo: "/logos/NPM.svg" },
+  { name: "Nodemon", logo: "/logos/Nodemon.svg" },
+  { name: "ESLint", logo: "/logos/ESLint.svg" },
+  { name: "Oh my zsh", logo: "/logos/Oh my zsh.svg" },
+  { name: "Homebrew", logo: "/logos/Homebrew.svg" },
+];
 
-    if (!container) return;
-
-    // Hitung lebar persis satu set item asli (1/3 dari total lebar setelah diduplikasi 3x)
-    const singleSetWidth = container.scrollWidth / 3;
-
-    // Posisi awal:
-    // Jika reverse (kiri ke kanan), mulai dari titik akhir set pertama
-    // Jika normal (kanan ke kiri), mulai dari awal (0)
-    if (reverse && container.scrollLeft === 0) {
-      container.scrollLeft = singleSetWidth;
-    }
-
-    const scroll = () => {
-      if (!isInteracting) {
-        if (!reverse) {
-          // Animasi Normal (Kanan ke Kiri)
-          container.scrollLeft += 1; // Kecepatan animasi (piksel per frame)
-
-          // Jika sudah melewati satu set penuh, kembalikan ke awal secara diam-diam
-          if (container.scrollLeft >= singleSetWidth) {
-            container.scrollLeft -= singleSetWidth;
-          }
-        } else {
-          // Animasi Reverse (Kiri ke Kanan)
-          container.scrollLeft -= 1;
-
-          // Jika menabrak ujung kiri, lompat ke set kedua secara diam-diam
-          if (container.scrollLeft <= 0) {
-            container.scrollLeft += singleSetWidth;
-          }
-        }
-      }
-      animationFrameId = requestAnimationFrame(scroll);
-    };
-
-    animationFrameId = requestAnimationFrame(scroll);
-
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [isInteracting, reverse]);
-
-  return (
-    <div
-      ref={scrollRef}
-      className="flex overflow-x-auto gap-6 px-6 sm:px-10 py-4 no-scrollbar cursor-grab active:cursor-grabbing"
-      style={{ scrollBehavior: "auto" }} // Harus 'auto' agar lompatan loop tidak beranimasi
-      onMouseEnter={() => setIsInteracting(true)}
-      onMouseLeave={() => setIsInteracting(false)}
-      onTouchStart={() => setIsInteracting(true)}
-      onTouchEnd={() => setIsInteracting(false)}
-    >
-      {duplicatedItems.map((item, index) => (
-        <div
-          key={`${item.name}-${index}`}
-          title={item.name}
-          className="flex items-center justify-center w-40 h-40 bg-white border border-slate-200/90 rounded-2xl shadow-sm hover:shadow-md hover:border-red-500/40 transition-all duration-300 group flex-shrink-0"
-        >
-          {item.logo ? (
-            <img
-              src={item.logo}
-              alt={`${item.name} logo`}
-              className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300 pointer-events-none select-none"
-            />
-          ) : (
-            <span className="text-xs font-bold text-slate-500 uppercase">
-              {item.name.substring(0, 3)}
-            </span>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-};
+const categories = [
+  {
+    title: "Programming Languages",
+    dotColor: "bg-red-500",
+    items: programmingLanguages,
+  },
+  {
+    title: "Frameworks",
+    dotColor: "bg-amber-500",
+    items: frameworks,
+  },
+  {
+    title: "Database",
+    dotColor: "bg-blue-500",
+    items: databases,
+  },
+  {
+    title: "Tools",
+    dotColor: "bg-emerald-500",
+    items: tools,
+  },
+];
 
 const TechMarquee = () => {
   return (
-    <div className="w-full py-24 bg-slate-100/70 border-y border-slate-200 overflow-hidden">
-      {/* --- SECTION 1: TECH STACK & TOOLS --- */}
-      <div className="max-w-6xl mx-auto px-6 sm:px-10 mb-8">
-        <h3 className="text-sm font-bold text-slate-600 tracking-wider uppercase flex justify-between items-center">
-          <span>Tech Stack & Tools</span>
-        </h3>
-      </div>
+    <section id="tech-stack" className="py-20 bg-slate-100/60 border-t border-slate-200">
+      <div className="max-w-6xl mx-auto px-6 sm:px-10">
+        {/* Header */}
+        <div className="mb-12 md:flex md:items-end md:justify-between">
+          <div>
+            <span className="text-xs font-bold text-red-600 tracking-wider uppercase mb-2 block">
+              Technical Capabilities
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+              Core Technologies & <span className="text-red-600 drop-shadow-sm">Tools.</span>
+            </h2>
+            <div className="w-20 h-1.5 bg-amber-500 rounded-full shadow-sm"></div>
+          </div>
+          <p className="text-slate-600 max-w-md text-base md:text-lg leading-relaxed mt-4 md:mt-0">
+            A structured overview of programming languages, frameworks, databases, and developer tooling I utilize in production.
+          </p>
+        </div>
 
-      <div className="relative flex overflow-hidden">
-        {/* Panggil komponen Helper di sini (Normal: Kanan ke Kiri) */}
-        <ScrollMarquee items={technologies} reverse={false} />
+        {/* Categorized Tech Badges Grid (4 Distinct Categories) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {categories.map((cat) => (
+            <div
+              key={cat.title}
+              className="bg-white border border-slate-200/90 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+            >
+              <h3 className="text-base font-bold text-slate-900 mb-4 flex items-center gap-2.5 border-b border-slate-100 pb-3">
+                <span className={`w-2.5 h-2.5 rounded-full ${cat.dotColor}`}></span>
+                {cat.title}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {cat.items.map((item) => (
+                  <div
+                    key={item.name}
+                    className="flex items-center gap-2 px-3 py-1.5 bg-slate-50 hover:bg-slate-100 border border-slate-200/80 rounded-xl transition-all duration-200 group"
+                  >
+                    {item.logo && (
+                      <img
+                        src={item.logo}
+                        alt={item.name}
+                        className="w-4 h-4 object-contain group-hover:scale-110 transition-transform"
+                      />
+                    )}
+                    <span className="text-xs sm:text-sm font-medium text-slate-800">
+                      {item.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-
-      {/* --- SECTION 2: PROGRAMMING LANGUAGES --- */}
-      <div className="max-w-6xl mx-auto px-6 sm:px-10 mb-8 mt-16">
-        <h3 className="text-sm font-bold text-slate-600 tracking-wider uppercase flex justify-between items-center">
-          <span>Programming Languages</span>
-        </h3>
-      </div>
-
-      <div className="relative flex overflow-hidden">
-        {/* Panggil komponen Helper di sini (Reverse: Kiri ke Kanan) */}
-        <ScrollMarquee items={programmingLanguages} reverse={true} />
-      </div>
-    </div>
+    </section>
   );
 };
 

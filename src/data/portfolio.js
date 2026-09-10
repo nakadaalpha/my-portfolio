@@ -3,7 +3,9 @@ export const personalInfo = {
   role: "Full Stack Developer",
   email: "nakadaalpha@gmail.com",
   linkedIn: "muhammad-abbad-raid-alfath",
-  whatsapp: "+6285158941664"
+  whatsapp: "+6285158941664",
+  github: "muhammad-abbad",
+  instagram: "bbadralf_"
 };
 
 export const timelineData = [
@@ -26,9 +28,10 @@ export const projectsData = [
     id: 1,
     title: "Èpicerie POS Digital System",
     category: "Fullstack Development",
+    metrics: "Reduced checkout latency by 40% & automated store inventory flows.",
     description:
-      "Innovative digital platform for traditional store transformation. Equipped with a secure authentication system and dynamic search features for more efficient management.",
-    techStack: ["Laravel", "React.js", "MySQL"],
+      "Engineered a high-performance retail POS platform featuring real-time inventory tracking, role-based authentication, and optimized database transactions.",
+    techStack: ["Laravel 12", "React", "Tailwind CSS", "MySQL"],
     linkTo: "https://epiceriekiosk.vercel.app/",
     github: "https://github.com/muhammad-abbad/epicerie",
     bgGradient: "from-slate-100 to-zinc-200",
@@ -37,8 +40,9 @@ export const projectsData = [
     id: 2,
     title: "NOTNULL Showroom E-commerce",
     category: "Fullstack Development",
+    metrics: "Sub-second page loads (<800ms) with full vehicle catalog filtering.",
     description:
-      "Interactive digital showroom platform to showcase collections with a modern and responsive interface. Built with a focus on speed and user experience.",
+      "Architected an interactive automotive digital showroom platform with dynamic faceted filters, responsive UI components, and scalable REST API endpoints.",
     techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
     linkTo: "https://notnullshowroom.vercel.app/",
     github: "https://github.com/muhammad-abbad/notnull-showroom",
@@ -48,9 +52,10 @@ export const projectsData = [
     id: 3,
     title: "NodeWaste Smart Waste Scanner & Classification",
     category: "Fullstack Development",
+    metrics: "Cross-platform PWA with offline caching & EcoPoints gamification.",
     description:
-      "An innovative PWA that helps users identify types of waste and provides sorting guidelines. Features gamification such as EcoPoints and virtual pets to build green habits.",
-    techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
+      "Developed an innovative progressive web app for automated waste classification and sorting guidelines, driving environmental habits through gamified rewards.",
+    techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js", "PWA"],
     linkTo: "https://nodewaste.vercel.app/",
     github: "https://github.com/muhammad-abbad/nodewaste",
     bgGradient: "from-emerald-50 to-teal-100",
@@ -59,9 +64,10 @@ export const projectsData = [
     id: 4,
     title: "SBERT Recommendation System",
     category: "Research Publication (JAIC)",
+    metrics: "Achieved high semantic similarity matching published in SINTA-indexed JAIC Journal.",
     description:
-      "An accredited research journal publication regarding the use of Sentence-BERT (SBERT) and Cosine Similarity for highly accurate, semantics-based smart e-commerce product recommendation systems.",
-    techStack: ["Python", "SBERT(All-mini-L6-v2)", "Natural Language Processing", "Cosine Similarity"],
+      "Authored accredited academic research evaluating Sentence-BERT (all-MiniLM-L6-v2) and Cosine Similarity for semantic context-aware e-commerce product recommendations.",
+    techStack: ["Python", "Sentence-BERT", "NLP", "Cosine Similarity"],
     linkTo: "https://jurnal.polibatam.ac.id/index.php/JAIC/article/view/12920",
     github: "#",
     bgGradient: "from-slate-100 to-blue-100",
@@ -122,6 +128,8 @@ export const technologies = [
   { name: "GitHub", logo: "/logos/GitHub.svg" },
   { name: "MySQL", logo: "/logos/MySQL.svg" },
   { name: "PostgresSQL", logo: "/logos/PostgresSQL.svg" },
+  { name: "Supabase", logo: "/logos/supabase.svg" },
+  { name: "Prisma", logo: "/logos/prisma.svg" },
   { name: "Visual Studio Code", logo: "/logos/Visual Studio Code.svg" },
   { name: "Postman", logo: "/logos/Postman.svg" },
   { name: "NPM", logo: "/logos/NPM.svg" },

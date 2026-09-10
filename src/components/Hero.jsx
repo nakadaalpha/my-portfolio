@@ -29,31 +29,22 @@ const Hero = () => {
         </p>
 
         {/* CTA */}
-        <div className="flex flex-wrap items-center justify-center gap-6 text-base md:text-lg font-semibold">
-          {/* Resume / CV Download Button */}
-          <a
-            href="#"
-            className="px-6 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-md hover:shadow-lg shadow-red-500/20 transition-all duration-300 text-center min-w-[170px]"
-          >
-            Resume / CV
-          </a>
-
-          {/* View Projects Button */}
+        <div className="flex flex-wrap items-center justify-center gap-5 text-base md:text-lg font-semibold">
+          {/* View Projects Button (Primary) */}
           <a
             href="#featured-projects"
-            className="px-6 py-3.5 bg-white hover:bg-slate-100 text-slate-800 hover:text-slate-900 font-bold rounded-xl border border-slate-200 shadow-sm hover:shadow transition-all duration-300 text-center min-w-[170px]"
+            className="px-7 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-md hover:shadow-lg shadow-red-500/20 transition-all duration-300 text-center min-w-[170px]"
           >
             View Projects
           </a>
 
-          {/* Let's Work Together Link */}
+          {/* Let's Work Together Button (Secondary) */}
           <a
             href="#contact"
-            className="text-slate-600 hover:text-red-600 transition-colors py-2"
+            className="px-7 py-3.5 bg-white hover:bg-slate-100 text-slate-800 hover:text-slate-900 font-bold rounded-xl border border-slate-200 shadow-sm hover:shadow transition-all duration-300 text-center min-w-[170px]"
           >
             Let’s Work Together →
           </a>
-
         </div>
       </div>
     </section>
