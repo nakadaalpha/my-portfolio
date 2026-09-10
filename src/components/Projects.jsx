@@ -4,19 +4,19 @@ import { projectsData } from "../data/portfolio";
 const Projects = () => {
   return (
     <section
-      id="projects"
-      className="py-24 bg-slate-950 border-y border-white/5"
+      id="featured-projects"
+      className="py-24 bg-slate-50 border-t border-slate-200"
     >
       <div className="max-w-6xl mx-auto px-6 sm:px-10">
         {/* Header Section */}
         <div className="mb-16 md:flex md:items-end md:justify-between">
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
-              Featured <span className="text-red-500 drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]">Projects</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+              Featured <span className="text-red-600 drop-shadow-sm">Projects</span>
             </h2>
-            <div className="w-20 h-1.5 bg-amber-500 rounded-full mb-6 md:mb-0 shadow-[0_0_10px_rgba(245,158,11,0.6)]"></div>
+            <div className="w-20 h-1.5 bg-amber-500 rounded-full mb-6 md:mb-0 shadow-sm"></div>
           </div>
-          <p className="text-slate-400 max-w-md text-lg leading-relaxed">
+          <p className="text-slate-600 max-w-md text-lg leading-relaxed">
             A collection of works and technical explorations I have built,
             combining functional design with solid code architecture.
           </p>
@@ -30,15 +30,15 @@ const Projects = () => {
               target={project.linkTo !== "#" ? "_blank" : undefined}
               rel="noopener noreferrer"
               key={project.id}
-              className="group bg-slate-900/40 backdrop-blur-md rounded-3xl border border-white/10 overflow-hidden shadow-sm hover:shadow-[0_0_25px_rgba(239,68,68,0.15)] hover:border-red-500/50 transition-all duration-500 flex flex-col cursor-pointer"
+              className="group bg-white rounded-3xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-red-500/10 hover:border-red-500/40 transition-all duration-500 flex flex-col cursor-pointer"
             >
               {/* Image/Mockup Area (Atas) */}
               {/* Nantinya bgGradient ini bisa Anda ganti dengan tag <img src="..." /> */}
               <div
-                className={`w-full h-64 sm:h-80 bg-gradient-to-br ${project.bgGradient} relative overflow-hidden flex items-center justify-center`}
+                className={`w-full h-64 sm:h-80 bg-gradient-to-br ${project.bgGradient} relative overflow-hidden flex items-center justify-center border-b border-slate-100`}
               >
                 {/* Efek hover overlay */}
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-20 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500 z-20 pointer-events-none"></div>
 
                 {project.linkTo !== "#" ? (
                   /* Iframe Preview - Skala 25% dari ukuran 4x lipat untuk mendapatkan versi 'mini' website */
@@ -53,7 +53,7 @@ const Projects = () => {
                   </div>
                 ) : (
                   /* Placeholder Text Gradient (Jika link masih "#") */
-                  <div className="text-white/20 font-bold text-6xl tracking-tighter uppercase transform group-hover:scale-105 transition-transform duration-700 select-none z-10">
+                  <div className="text-slate-400 font-bold text-6xl tracking-tighter uppercase transform group-hover:scale-105 transition-transform duration-700 select-none z-10">
                     {project.title.substring(0, 3)}
                   </div>
                 )}
@@ -67,7 +67,7 @@ const Projects = () => {
                   </span>
                   
                   {/* Menambahkan panah sederhana agar user tahu ini bisa diklik */}
-                  <div className="text-slate-500 group-hover:text-red-400 transition-colors">
+                  <div className="text-slate-400 group-hover:text-red-600 transition-colors">
                     <svg
                       className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"
@@ -79,11 +79,11 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-red-600 transition-colors">
                   {project.title}
                 </h3>
 
-                <p className="text-slate-400 leading-relaxed mb-8 flex-grow">
+                <p className="text-slate-600 leading-relaxed mb-8 flex-grow">
                   {project.description}
                 </p>
 
@@ -92,7 +92,7 @@ const Projects = () => {
                   {project.techStack.map((tech, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-slate-800/80 text-slate-300 text-xs font-semibold rounded-md border border-white/10"
+                      className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-md border border-slate-200"
                     >
                       {tech}
                     </span>

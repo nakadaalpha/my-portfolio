@@ -5,41 +5,53 @@ const Hero = () => {
     <section id="home" className="relative w-full min-h-screen flex items-center justify-center overflow-hidden z-10">
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
+        {/* Specialization Tag */}
+        <div className="mb-6 px-4 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-600 text-xs md:text-sm font-semibold tracking-wider uppercase shadow-sm">
+          Full-Stack Web Developer & ML Integration Enthusiast
+        </div>
+
         {/* Headline */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight mb-6 text-slate-100">
-          Building Modern Web Applications.
-          <br />
-          <span className="bg-gradient-to-r from-red-500 via-amber-400 to-rose-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(239,68,68,0.5)]">
-            Fast. Scalable. Elegant.
-          </span>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 text-slate-900 max-w-4xl">
+          Building{" "}
+          <span className="bg-gradient-to-r from-red-600 via-amber-500 to-rose-600 bg-clip-text text-transparent">
+            fast, scalable, and intelligent
+          </span>{" "}
+          web applications from idea to production.
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-          I'm{" "}
-          <span className="text-white font-medium drop-shadow-md">
+        <p className="text-lg md:text-xl text-slate-600 max-w-2xl mb-10 leading-relaxed">
+          Hi, I'm{" "}
+          <span className="text-slate-900 font-bold">
             {personalInfo.name}
           </span>
-          , a {personalInfo.role} focused on building high-performance web
-          applications with seamless user experiences.
+          . I specialize in crafting high-performance, seamless digital solutions powered by modern tech stacks.
         </p>
 
         {/* CTA */}
-        <div className="flex flex-wrap items-center justify-center gap-6 text-base md:text-lg font-medium">
-          {/* Primary CTA */}
+        <div className="flex flex-wrap items-center justify-center gap-6 text-base md:text-lg font-semibold">
+          {/* Resume / CV Download Button */}
           <a
-            href="#contact"
-            className="text-red-400 hover:text-red-300 hover:drop-shadow-[0_0_8px_rgba(248,113,113,0.8)] transition-all"
+            href="#"
+            className="px-6 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-md hover:shadow-lg shadow-red-500/20 transition-all duration-300 text-center min-w-[170px]"
           >
-            Let’s Work Together →
+            Resume / CV
           </a>
 
-          {/* Secondary CTA */}
+          {/* View Projects Button */}
           <a
-            href="#projects"
-            className="text-slate-400 hover:text-white transition-colors"
+            href="#featured-projects"
+            className="px-6 py-3.5 bg-white hover:bg-slate-100 text-slate-800 hover:text-slate-900 font-bold rounded-xl border border-slate-200 shadow-sm hover:shadow transition-all duration-300 text-center min-w-[170px]"
           >
             View Projects
+          </a>
+
+          {/* Let's Work Together Link */}
+          <a
+            href="#contact"
+            className="text-slate-600 hover:text-red-600 transition-colors py-2"
+          >
+            Let’s Work Together →
           </a>
 
         </div>

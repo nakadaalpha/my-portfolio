@@ -31,7 +31,7 @@ export const projectsData = [
     techStack: ["Laravel", "React.js", "MySQL"],
     linkTo: "https://epiceriekiosk.vercel.app/",
     github: "https://github.com/muhammad-abbad/epicerie",
-    bgGradient: "from-slate-800 to-zinc-900",
+    bgGradient: "from-slate-100 to-zinc-200",
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const projectsData = [
     techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
     linkTo: "https://notnullshowroom.vercel.app/",
     github: "https://github.com/muhammad-abbad/notnull-showroom",
-    bgGradient: "from-zinc-900 to-stone-800",
+    bgGradient: "from-zinc-100 to-stone-200",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ export const projectsData = [
     techStack: ["PostgreSQL", "Express.js", "React.js", "Node.js"],
     linkTo: "https://nodewaste.vercel.app/",
     github: "https://github.com/muhammad-abbad/nodewaste",
-    bgGradient: "from-emerald-900 to-teal-900",
+    bgGradient: "from-emerald-50 to-teal-100",
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ export const projectsData = [
     techStack: ["Python", "SBERT(All-mini-L6-v2)", "Natural Language Processing", "Cosine Similarity"],
     linkTo: "https://jurnal.polibatam.ac.id/index.php/JAIC/article/view/12920",
     github: "#",
-    bgGradient: "from-slate-800 to-blue-950",
+    bgGradient: "from-slate-100 to-blue-100",
   },
 ];
 

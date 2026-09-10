@@ -1,6 +1,10 @@
 /* src/index.css */
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Animasi dari Kanan ke Kiri (Baris Atas) */
 @keyframes marquee {
   0% {
