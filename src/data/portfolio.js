@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "nakadaalpha@gmail.com",
   linkedIn: "muhammad-abbad-raid-alfath",
   whatsapp: "+6285158941664",
-  github: "muhammad-abbad",
+  github: "nakadaalpha",
   instagram: "bbadralf_"
 };
 
