@@ -50,6 +50,7 @@ const Contact = () => {
             href={`https://wa.me/${personalInfo.whatsapp.replace('+', '')}?text=${encodeURIComponent("Hello Abbad, I saw your portfolio and I'm interested in discussing a project with you!")}`}
             target="_blank"
             rel="noopener noreferrer"
+            data-track-cta="portfolio-contact-whatsapp"
             className="group relative inline-flex items-center justify-center px-7 py-3.5 bg-white text-slate-800 font-medium rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-500/50 hover:text-emerald-600 transition-all duration-300 overflow-hidden w-full sm:w-auto"
           >
             <span className="relative z-10 flex items-center gap-2.5">
@@ -85,6 +86,7 @@ const Contact = () => {
               href={`https://www.instagram.com/${personalInfo.instagram}/`}
               target="_blank"
               rel="noopener noreferrer"
+              data-track-cta="portfolio-contact-instagram"
               className="group relative inline-flex items-center justify-center px-7 py-3.5 bg-white text-slate-800 font-medium rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-pink-500/50 hover:text-pink-600 transition-all duration-300 overflow-hidden w-full sm:w-auto"
             >
               <span className="relative z-10 flex items-center gap-2.5">
