@@ -18,6 +18,7 @@ const Contact = () => {
             href={`https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}&su=Job%20Opportunity%20%2F%20Offering%20-%20%5BCompany%2FYour%20Name%5D&body=Hello%20Abbad%2C%0A%0AI%20saw%20your%20portfolio%20and%20I%20am%20very%20impressed%20with%20your%20work.%20I%20would%20like%20to%20discuss%20a%20potential%20job%20opportunity%20with%20our%20company.%0A%0APlease%20let%20me%20know%20when%20you%20are%20available%20for%20a%20quick%20chat.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D`}
             target="_blank"
             rel="noopener noreferrer"
+            data-track-cta="portfolio-contact-email"
             className="group relative inline-flex items-center justify-center px-7 py-3.5 bg-white text-slate-800 font-medium rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-red-500/50 hover:text-red-600 transition-all duration-300 overflow-hidden w-full sm:w-auto"
           >
             <span className="relative z-10 flex items-center gap-2.5">
@@ -34,6 +35,7 @@ const Contact = () => {
             href={`https://linkedin.com/in/${personalInfo.linkedIn.replace('@', '')}`}
             target="_blank"
             rel="noopener noreferrer"
+            data-track-cta="portfolio-contact-linkedin"
             className="group relative inline-flex items-center justify-center px-7 py-3.5 bg-white text-slate-800 font-medium rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-500/50 hover:text-blue-600 transition-all duration-300 overflow-hidden w-full sm:w-auto"
           >
             <span className="relative z-10 flex items-center gap-2.5">
@@ -68,6 +70,7 @@ const Contact = () => {
               href={`https://github.com/${personalInfo.github}`}
               target="_blank"
               rel="noopener noreferrer"
+              data-track-cta="portfolio-contact-github"
               className="group relative inline-flex items-center justify-center px-7 py-3.5 bg-white text-slate-800 font-medium rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-400 hover:text-slate-900 transition-all duration-300 overflow-hidden w-full sm:w-auto"
             >
               <span className="relative z-10 flex items-center gap-2.5">

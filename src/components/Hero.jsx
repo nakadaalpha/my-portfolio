@@ -33,6 +33,7 @@ const Hero = () => {
           {/* View Projects Button (Primary) */}
           <a
             href="#featured-projects"
+            data-track-cta="portfolio-hero-projects"
             className="px-7 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-md hover:shadow-lg shadow-red-500/20 transition-all duration-300 text-center min-w-[170px]"
           >
             View Projects
@@ -41,6 +42,7 @@ const Hero = () => {
           {/* Let's Work Together Button (Secondary) */}
           <a
             href="#contact"
+            data-track-cta="portfolio-hero-contact"
             className="px-7 py-3.5 bg-white hover:bg-slate-100 text-slate-800 hover:text-slate-900 font-bold rounded-xl border border-slate-200 shadow-sm hover:shadow transition-all duration-300 text-center min-w-[170px]"
           >
             Let’s Work Together →

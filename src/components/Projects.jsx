@@ -103,6 +103,7 @@ const Projects = () => {
                     href={project.linkTo}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-track-cta={`portfolio-project-livedemo-${project.id}`}
                     className="inline-flex items-center gap-1.5 px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-xl shadow-xs hover:shadow transition-all"
                   >
                     <span>Live Demo</span>
